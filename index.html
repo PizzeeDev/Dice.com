@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="javaScript/dice.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <title>Roll The Dice</title>
+    <link rel="icon" href="images/diceee-title.png">
+</head>
+
+<body>
+
+    <header>
+        <p>DICE</p>
+    </header>
+    <main>
+        <div class="img-div-outer">
+            <div class="d1" onclick="rollDice()">
+                <img class="d1-img" id="d1-img" src="images/dice1.png" alt="">
+                <div class="tooltip">Tap To Dice</div>
+            </div>
+            <div class="d2" onclick="rollDice()">
+                <img class="d2-img" id="d2-img" src="images/dice3.png" alt="">
+                <div class="tooltip">Tap To Dice</div>
+            </div>
+        </div>
+
+
+        <div class="info-all-outer">
+            <div class="info-midle">
+                <div class="info-all">
+                    <p class="human-dice">Human Dice:</p>
+                    <p id="human-dice">0</p>
+                </div>
+                <div class="info-all">
+                    <p class="comp-dice">Computer Dice:</p>
+                    <p id="comp-dice">0</p>
+                </div>
+                <div class="info-all">
+                    <p class="remarks">Result:</p>
+                    <p id="remarks"> - - - -</p>
+                </div>
+
+            </div>
+
+            <div class="info-midle">
+                <div class="info-all">
+                    <p class="your-wins">Your Wins:</p>
+                    <p id="human-wins">0</p>
+                </div>
+
+                <div class="info-all">
+                    <p class="comp-wins"> Computer Wins:</p>
+                    <p id="comp-wins">0</p>
+                </div>
+
+                <div class="info-all">
+                    <p class="tie-matches">Tie Matches:</p>
+                    <p id="tie-matches">0</p>
+                </div>
+
+                <div class="info-all">
+                    <p class="total-matches">Total Matches:</p>
+                    <p id="total-matches">0</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="dice-btns">
+            <div class="dice-btn-div">
+                <button class="dice-btn" onclick="rollDice()">Roll The Dice</button>
+            </div>
+            <div class="reset-btn-div">
+                <button class="reset-btn" onclick="window.location.reload();">Reset</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p class="code-by">Code By:</p>
+            <a href="https://github.com/PizzeeDev" id="code-by" target="_blank">PizzeeDev <img class="code-by-img"
+                    src="images/github.svg" alt=""></a>
+        </div>
+        <hr>
+        <div class="footer-inner">
+            <p class="project-name">Project Name:</p>
+            <p id="project-name">Roll The Dice<img class="code-by-img" src="images/diceee-title.png" alt=""></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
